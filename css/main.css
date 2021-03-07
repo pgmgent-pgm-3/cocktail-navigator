@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;500&display=swap");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #eecda3; /* fallback for old browsers */
+  background: linear-gradient(to right, #eecda3, #ef629f);
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 300;
+}
+
+h1,
+h2 {
+  margin-bottom: 0.5rem;
+}
+
+/* nav css */
+nav#primary_navigation ul {
+  list-style: none;
+  display: flex;
+  justify-content: flex-start;
+}
+
+nav#primary_navigation ul li {
+  list-style: none;
+}
+
+nav#primary_navigation ul li a {
+  text-decoration: none;
+  color: #c63b77;
+  display: block;
+  background-color: #f1e1cc;
+  padding: 0.4rem;
+  margin: 5px;
+  cursor: pointer;
+}
+
+nav#primary_navigation ul li a.active,
+nav#primary_navigation ul li a:hover {
+  background-color: #c63b77;
+  color: #f1e1cc;
+}
+
+.container {
+  max-width: 700px;
+  width: 80%;
+  margin: 1rem auto;
+}
+
+#app div.component {
+  display: none;
+}
+
+/* cocktail css */
+.cocktail.hide {
+  display: none;
+}
+
+.cocktail img {
+  max-width: 350px;
+}
+
+.cocktail p {
+  margin-bottom: 1rem;
+}
+
+.cocktail ul {
+  margin-left: 1rem;
+  margin-bottom: 1rem;
+  font-style: italic;
+  color: #8d1b4c;
+}
+/* end cocktail css */
+
+/* form css */
+label {
+  margin-bottom: 0.5rem;
+  display: block;
+  font-weight: 500;
+}
+
+input[type="range"],
+select,
+button {
+  margin-bottom: 1rem;
+}
+
+select,
+button {
+  border-radius: 5px;
+  border: 1px solid #c63b77;
+  background-color: #f1e1cc;
+  padding: 0.4rem 0.8rem;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 300;
+  color: #c63b77;
+}
+
+button:hover {
+  background-color: #c63b77;
+  color: #f1e1cc;
+}
+/* end form css */

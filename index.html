@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="Frederick Roegiers" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cocktails</title>
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body>
+    <nav class="container" id="primary_navigation">
+      <ul>
+        <li>
+          <a class="nav_item active" href="preferences" data-href="preferences">Voorkeuren</a>
+        </li>
+        <li>
+          <a class="nav_item" href="cocktails" data-href="cocktails">Cocktails</a>
+        </li>
+      </ul>
+    </nav>
+    <main class="container" id="app">
+      <div class="component" id="preferences">
+        <h1>Voorkeuren</h1>
+        <form action="">
+          <div>
+            <label for="category">Categorie</label>
+            <select name="category" id="category"></select>
+          </div>
+          <div>
+            <label for="amount">Max aantal cocktails: <span id="amount_value">20</span></label>
+            <input type="range" name="amount" id="amount" min="1" max="100" value="20" />
+          </div>
+          <div>
+            <button type="submit">Bewaar</button>
+          </div>
+        </form>
+      </div>
+      <div class="component" id="cocktails"></div>
+    </main>
+    <script src="./js/app.js" type="module"></script>
+  </body>
+</html>
